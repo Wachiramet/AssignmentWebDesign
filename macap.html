@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Pattaya:400' rel='stylesheet' type='text/css'>
+    <style>
+
+        .navbar {
+          margin-bottom: 0;
+            z-index: 1000;
+            left: 0;
+            right: 0;
+            opacity: 0.96;
+        }
+        @media (max-width: 767px) {
+            .navbar-nav li {
+                border-bottom: 1px solid #858585;
+                margin: 0 50px 0 50px;
+            }
+            .navbar .navbar-collapse {
+                left: 0;
+                right: 0;
+                position: absolute;
+                z-index: 1000;
+                background-color: #222;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .navbar .navbar-nav {
+                display: inline-block;
+                float: none;
+            }
+            .navbar .navbar-collapse {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 0;
+            }
+            .navbar-nav li {
+                border-bottom: 0px;
+                margin: 0;
+            }
+        }
+
+        .toggle-left {
+            float: left;
+            margin-left: 20px;
+        }
+
+        .toggle-right {
+            float: right;
+            margin-left: 20px;
+        }
+        font.sansserif{
+          @import url(https://fonts.googleapis.com/css?family=Pattaya:400);
+          font-family: 'Pattaya', sans-serif;
+          font-weight: bold;
+          color: white;
+        }
+        font.sansserif2{
+          @import url(https://fonts.googleapis.com/css?family=Pattaya:400);
+          font-family: 'Pattaya', sans-serif;
+          font-weight: bold;
+          color: black;
+        }
+        .bg{
+          margin-top: 15vw;
+          position: absolute;
+          width: 100vw;
+        }
+        img{
+          width: 100vw;
+          height: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle toggle-left btn-info" data-toggle="collapse" data-target="#menu-nav">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                </button>
+                <div class="dropdown toggle-right">
+                    <button class="navbar-toggle btn-info" type="button" id="menu1" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#BAG">BAG</a></li>
+                        <li><a href="#ORDER">ORDER</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#SIGN IN">SIGN IN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse " id="menu-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Fiamma</a></li>
+                    <li><a href="#">Macap</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Page 4</a></li>
+                </ul>
+            </div>
+            <!-- ////////////////////// navbar-nav ////////////////////// -->
+        </div>
+    </nav>
+    <div class="bg" align="center">
+
+      <font class="sansserif" ><h2 > Macap </h2> </font>
+      <font class="sansserif" size="10"> สัมผัสแห่งอัจฉริยะ </font>
+    </div>
+    <img src="img/SlideHome01.jpg" alt=""/>
+    <div  align="center">
+      <br><font class="sansserif2" size="10"> WORLD-CLASS EQUIPMENT </font><br>
+    </div>
+    <img src="img/SlideHome03.jpg" alt=""/>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+<script src="js/bootstrap.min.js"></script>
+
+</html>
