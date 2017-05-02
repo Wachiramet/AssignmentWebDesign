@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            z-index: 5;
+            left: 0;
+            right: 0;
+            opacity: 0.95;
+        }
+        @media (max-width: 767px) {
+            .navbar-nav li {
+                border-bottom: 1px solid #858585;
+                margin: 0 50px 0 50px;
+            }
+            .navbar .navbar-collapse {
+                left: 0;
+                right: 0;
+                position: absolute;
+                z-index: 5;
+                background-color: #222;
+            }
+            .navbar-form {
+                margin: 0 20px 0 20px;
+            }
+            .search-form {
+                margin: 0 35px 0 35px;
+            }
+            /*pooh*/
+            .content-name{
+              position: absolute;
+              padding-left: 45vw;
+              padding-top: 40vw;
+            }
+            .content-name2{
+              position: absolute;
+              padding-left: 5vw;
+              padding-top: 35vw;
+            }
+            .content-name3{
+              position: absolute;
+              padding-left: 47vw;
+              padding-top: 21vw;
+            }
+            .padding-content{
+              padding-left: 20px;
+            }
+            /**/
+        }
+        @media (min-width: 768px) {
+            .navbar .navbar-nav {
+                display: inline-block;
+                float: none;
+            }
+            .navbar .navbar-collapse {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 0;
+            }
+            .navbar-nav li {
+                border-bottom: 0px;
+                margin: 0;
+            }
+            /* SEARCH */
+            .search-form {
+                position: absolute;
+                top: 10px;
+                right: 20vw;
+                left: 20vw;
+                height: 0px;
+            }
+            .search-form .form-group {
+                float: right;
+                transition: all 0.35s, border-radius 0s;
+                width: 32px;
+                height: 32px;
+                background-color: #fff;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+                border-radius: 25px;
+                border: 1px solid #ccc;
+            }
+            .search-form .form-group input.form-control {
+                padding-right: 20px;
+                border: 0 none;
+                background: transparent;
+                box-shadow: none;
+                display:block;
+            }
+            .search-form .form-group input.form-control::-webkit-input-placeholder {
+                display: none;
+            }
+            .search-form .form-group input.form-control:-moz-placeholder {
+            /* Firefox 18- */
+                display: none;
+            }
+            .search-form .form-group input.form-control::-moz-placeholder {
+            /* Firefox 19+ */
+                display: none;
+            }
+            .search-form .form-group input.form-control:-ms-input-placeholder {
+                display: none;
+            }
+            .search-form .form-group:hover,
+            .search-form .form-group.hover {
+                width: 100%;
+                border-radius: 4px 25px 25px 4px;
+            }
+            /*pooh*/
+            .content-name{
+              position: absolute;
+              padding-left: 50vw;
+              padding-top: 40vw;
+            }
+            .content-name2{
+              position: absolute;
+              padding-left: 10vw;
+              padding-top: 35vw;
+            }
+            .padding-content{
+              padding-left: 100px;
+            }
+            /**/
+            /* SEARCH */
+        }
+        .toggle-left {
+            float: left;
+            margin-left: 20px;
+        }
+        .toggle-right {
+            float: right;
+            margin-left: 20px;
+        }
+        /* pooh*/
+        .font-white{
+          color: white;
+        }
+        /**/
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle toggle-left" data-toggle="collapse" data-target="#menu-nav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="dropdown toggle-right">
+                    <button class="navbar-toggle btn-info" type="button" id="menu1" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                        <li><a href="#BAG">BAG</a></li>
+                        <li><a href="#ORDER">ORDER</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#SIGN IN">SIGN IN</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="menu-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href=""><span class="glyphicon glyphicon-home"></span></a></li>
+                    <li><a href="">Fiamma</a></li>
+                    <li><a href="">Macap</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <form action="" class="search-form">
+                    <div class="form-group has-feedback">
+                        <label for="search" class="sr-only">Search</label>
+                        <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
+                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div>
+      <div class="content-name" align="center">
+          <h4><a href="#" class="padding-content">ดูเพิ่มเติม<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+              <a href="#" class="padding-content">สั่งซื้อ<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+          </h4>
+      </div>
+      <img src="img/0ATLANTIC.jpg" width="100%" alt="">
+    </div>
+    <div>
+      <div class="content-name2" align="center">
+          <h4><a href="#" class="padding-content">ดูเพิ่มเติม<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+              <a href="#" class="padding-content">สั่งซื้อ<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+          </h4>
+      </div>
+      <img src="img/0PACIFIC.jpg" width="100%" alt="">
+    </div>
+    <div>
+      <div class="content-name3" align="center">
+          <h4><a href="#" class="padding-content">ดูเพิ่มเติม<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+              <a href="#" class="padding-content">สั่งซื้อ<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+          </h4>
+      </div>
+      <img src="img/0PRESTIGE.jpg" width="100%" alt="">
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
