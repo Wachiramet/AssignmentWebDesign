@@ -6,119 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
     <style>
-        .navbar {
-            margin-bottom: 0;
-            z-index: 5;
-            left: 0;
-            right: 0;
-            opacity: 0.95;
-        }
-        @media (max-width: 767px) {
-            .navbar-nav li {
-                border-bottom: 1px solid #858585;
-                margin: 0 50px 0 50px;
-            }
-            .navbar .navbar-collapse {
-                left: 0;
-                right: 0;
-                position: absolute;
-                z-index: 5;
-                background-color: #222;
-            }
-            .navbar-form {
-                margin: 0 20px 0 20px;
-            }
-            .search-form {
-                margin: 0 35px 0 35px;
-            }
-            .content-name{
-              position: absolute;
-              padding-left: 8vw;
-              padding-top: 30vw;
-            }
-            .padding-content{
-              padding-left: 10px;
-            }
-        }
-        @media (min-width: 768px) {
-            .navbar .navbar-nav {
-                display: inline-block;
-                float: none;
-            }
-            .navbar .navbar-collapse {
-                text-align: center;
-                width: 100%;
-                margin-bottom: 0;
-            }
-            .navbar-nav li {
-                border-bottom: 0px;
-                margin: 0;
-            }
-            /* SEARCH */
-            .search-form {
-                position: absolute;
-                top: 10px;
-                right: 20vw;
-                left: 20vw;
-                height: 0px;
-            }
-            .search-form .form-group {
-                float: right;
-                transition: all 0.35s, border-radius 0s;
-                width: 32px;
-                height: 32px;
-                background-color: #fff;
-                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
-                border-radius: 25px;
-                border: 1px solid #ccc;
-            }
-            .search-form .form-group input.form-control {
-                padding-right: 20px;
-                border: 0 none;
-                background: transparent;
-                box-shadow: none;
-                display:block;
-            }
-            .search-form .form-group input.form-control::-webkit-input-placeholder {
-                display: none;
-            }
-            .search-form .form-group input.form-control:-moz-placeholder {
-            /* Firefox 18- */
-                display: none;
-            }
-            .search-form .form-group input.form-control::-moz-placeholder {
-            /* Firefox 19+ */
-                display: none;
-            }
-            .search-form .form-group input.form-control:-ms-input-placeholder {
-                display: none;
-            }
-            .search-form .form-group:hover,
-            .search-form .form-group.hover {
-                width: 100%;
-                border-radius: 4px 25px 25px 4px;
-            }
-            .content-name{
-              position: absolute;
-              padding-left: 15vw;
-              padding-top: 30vw;
-            }
-            .padding-content{
-              padding-left: 70px;
-            }
-            /* SEARCH */
-        }
-        .toggle-left {
-            float: left;
-            margin-left: 20px;
-        }
-        .toggle-right {
-            float: right;
-            margin-left: 20px;
-        }
         /* pooh*/
-
         .font-white{
           color: white;
         }
@@ -139,7 +29,7 @@
                 <button type="button" class="navbar-toggle toggle-left" data-toggle="collapse" data-target="#menu-nav">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
                 </button>
                 <div class="dropdown toggle-right">
                     <button class="navbar-toggle btn-info" type="button" id="menu1" data-toggle="dropdown">
@@ -153,20 +43,43 @@
                     </ul>
                 </div>
             </div>
-            <div class="collapse navbar-collapse" id="menu-nav">
-                <ul class="nav navbar-nav">
+            <div class="collapse navbar-collapse navbar-custom" id="menu-nav">
+                <ul class="nav navbar-nav navbar-left">
                     <li><a href=""><span class="glyphicon glyphicon-home"></span></a></li>
-                    <li><a href="">Fiamma</a></li>
-                    <li><a href="">Macap</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li><a href="Fiamma.html">Fiamma</a></li>
+                    <li><a href="/">Macap</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <form action="" class="search-form">
-                    <div class="form-group has-feedback">
-                        <label for="search" class="sr-only">Search</label>
-                        <input type="text" class="form-control" name="search" id="search" placeholder="Search...">
-                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                    </div>
-                </form>
+                <form class="navbar-form" role="search">
+					<div class="input-group">
+						<input type="text" class="form-control pull-right" placeholder="Search">
+						<span class="input-group-btn">
+							<button type="reset" class="btn btn-default">
+								<span class="glyphicon glyphicon-remove">
+								</span>
+							</button>
+							<button type="submit" class="btn btn-default">
+								<span class="glyphicon glyphicon-search">
+								</span>
+							</button>
+						</span>
+					</div>
+				</form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown toggle-right">
+                        <a class="cart-navbar" type="button" id="menu1" data-toggle="dropdown">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#BAG">BAG</a></li>
+                            <li><a href="#ORDER">ORDER</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#SIGN IN">SIGN IN</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -197,5 +110,6 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<!--  Script Search -->
+<script src="js/navbar.js"></script>
 </html>

@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+    /*pooh*/
+    .content-name{
+      position: absolute;
+      padding-left: 50vw;
+      padding-top: 40vw;
+    }
+    .content-name2{
+      position: absolute;
+      padding-left: 10vw;
+      padding-top: 35vw;
+    }
+    .content-name3{
+      position: absolute;
+      padding-left: 47vw;
+      padding-top: 23vw;
+    }
+    .padding-content{
+      padding-left: 100px;
+    }
+    /**/
+}
+/* pooh*/
+.font-white{
+  color: white;
+}
+body{
+  background-color: white;
+}
+.c1 img{
+  padding-bottom: 20px;
+}
+/**/
