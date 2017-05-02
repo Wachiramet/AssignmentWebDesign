@@ -1,0 +1,136 @@
+.navbar {
+    position: fixed;
+    margin-bottom: 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    opacity: 0.95;
+}
+/* Search ... */
+.navbar-collapse form[role="search"] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 5;
+
+    transition: all 0.35s;
+}
+.navbar-collapse form[role="search"] input {
+    padding: 16px 12px;
+    font-size: 14pt;
+    color: rgb(160, 160, 160);
+    box-shadow: none;
+}
+.navbar-collapse form[role="search"] button[type="reset"] {
+    display: none;
+}
+/* Search ... */
+@media (max-width: 767px) {
+    .navbar-nav li {
+        border-bottom: 1px solid #858585;
+        margin: 0 50px 0 50px;
+    }
+    .navbar .navbar-collapse {
+        left: 0;
+        right: 0;
+        position: absolute;
+        z-index: 5;
+        background-color: #222;
+    }
+    .navbar-form {
+        margin: 0 20px 0 20px;
+    }
+    .form-group {
+        padding-top: 3px;
+        padding-bottom: 3px;
+        margin-bottom: 0;
+    }
+    .navbar-nav .cart-navbar {
+        display: none;
+    }
+    /* Search ... */
+    .navbar-collapse form[role="search"] {
+        position: relative;
+        width: 90vw;
+        left: 5vw;
+        transition: none;
+    }
+    .navbar-collapse form[role="search"] button,
+    .navbar-collapse form[role="search"] input {
+        background-color: #222;
+    }
+    /* Search ... */
+}
+@media (min-width: 768px) {
+    .navbar .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    .navbar .navbar-collapse {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .navbar-nav li {
+        border-bottom: 0px;
+        margin: 0;
+    }
+    .navbar-collapse {
+        padding-top: 0px !important;
+        padding-right: 38px !important;
+    }
+    /* Search ... */
+    .navbar-collapse form[role="search"] {
+        width: 38px;
+    }
+    .navbar-collapse form[role="search"] button,
+    .navbar-collapse form[role="search"] input {
+        right: 90px;
+        padding: 15px 12px;
+        background-color: #222;
+        color: #9d9d9d;
+        border: 0;
+    }
+    .navbar-collapse form[role="search"] button:hover,
+    .navbar-collapse form[role="search"] input:hover {
+        color: #fff;
+    }
+    .navbar-collapse form[role="search"] input {
+        padding: 25px 12px;
+        font-size: 18pt;
+        opacity: 0;
+        display: none;
+    }
+    .navbar-collapse form[role="search"].active {
+        width: 100%;
+    }
+    .navbar-collapse form[role="search"].active button,
+    .navbar-collapse form[role="search"].active input {
+        right: 0;
+        display: table-cell;
+        opacity: 1;
+        background-color: #222;
+        color: #9d9d9d;
+        border: 0;
+    }
+    .navbar-collapse form[role="search"].active button:hover,
+    .navbar-collapse form[role="search"].active input:hover {
+        color: #fff;
+    }
+    .navbar-collapse form[role="search"].active input {
+        width: 90vw;
+        background-color: #222;
+    }
+    /* Search ... */
+}
+.toggle-left {
+    float: left;
+    margin-left: 20px;
+}
+.toggle-right {
+    float: right;
+    margin-left: 20px;
+}
