@@ -7,6 +7,14 @@
     right: 0;
     opacity: 0.95;
 }
+.toggle-left {
+    float: left;
+    margin-left: 20px;
+}
+.toggle-right {
+    float: right;
+    margin-left: 20px;
+}
 /* Search ... */
 .navbar-collapse form[role="search"] {
     position: absolute;
@@ -29,6 +37,14 @@
     display: none;
 }
 /* Search ... */
+/* Sign in ... */
+#myModal .modal-dialog{
+    margin: 30px auto;
+}
+#myModal .modal-dialog .modal-body{
+    text-align: left;
+}
+/* Sign in ... */
 @media (max-width: 767px) {
     .navbar-nav li {
         border-bottom: 1px solid #858585;
@@ -64,6 +80,12 @@
         background-color: #222;
     }
     /* Search ... */
+    /* Sign in ... */
+    #myModal .modal-dialog{
+        width: 90vw;
+        min-width: 286px;
+    }
+    /* Sign in ... */
 }
 @media (min-width: 768px) {
     .navbar .navbar-nav {
@@ -126,12 +148,10 @@
         background-color: #222;
     }
     /* Search ... */
-}
-.toggle-left {
-    float: left;
-    margin-left: 20px;
-}
-.toggle-right {
-    float: right;
-    margin-left: 20px;
+    /* Sign in ... */
+    #myModal .modal-dialog{
+        width: 30vw;
+        min-width: 690px;
+    }
+    /* Sign in ... */
 }

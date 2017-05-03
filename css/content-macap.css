@@ -1,0 +1,32 @@
+@media (min-width: 768px) {
+  /* pooh*/
+  .content-name{
+    position: absolute;
+    padding-left: 27vw;
+    padding-top: 30vw;
+  }
+  .padding-content{
+    padding-left: 30px;
+  }
+  /**/
+}
+@media (max-width: 767px){
+  /* pooh*/
+  .content-name{
+    position: absolute;
+    padding-left: 7vw;
+    padding-top: 30vw;
+  }
+  .padding-content{
+    padding-left: 10px;
+  }
+  /**/
+}
+/* pooh*/
+body{
+  background-color: #1a1a1a;
+}
+.c1 img{
+  padding-bottom: 20px;
+}
+/**/
