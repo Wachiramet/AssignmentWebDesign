@@ -6,6 +6,7 @@
     left: 0;
     right: 0;
     opacity: 0.95;
+    font-family: Cloud-Bold;
 }
 .toggle-left {
     float: left;
@@ -155,3 +156,13 @@
     }
     /* Sign in ... */
 }
+/* Font ... */
+@font-face {
+    font-family: Cloud-Bold;
+    src: url('fonts/Cloud-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: Cloud-Light;
+    src: url('fonts/Cloud-Light.otf') format('opentype');
+}
+/* Font ... */
