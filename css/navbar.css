@@ -158,11 +158,11 @@
 }
 /* Font ... */
 @font-face {
-    font-family: Cloud-Bold;
-    src: url('fonts/Cloud-Bold.otf') format('opentype');
+    font-family: CloudBold;
+    src: url('../fonts/Cloud-Bold.otf') format('opentype');
 }
 @font-face {
-    font-family: Cloud-Light;
-    src: url('fonts/Cloud-Light.otf') format('opentype');
+    font-family: CloudLight;
+    src: url('../fonts/Cloud-Light.otf') format('opentype');
 }
 /* Font ... */
