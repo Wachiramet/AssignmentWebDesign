@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+    }
+    @font-face{
+      font-family: CloudBold;
+      src: url('fonts/Cloud-Bold.otf') format('opentype');
+    }
+    @font-face{
+      font-family: CloudLight;
+      src: url('fonts/Cloud-Light.otf') format('opentype');
+    }
+    .parallax1 {
+      /* The image used */
+      background-image: url('img/ATLANTIC00001.jpg');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax2 {
+      /* The image used */
+      background-image: url('img/ATLANTIC00002.jpg');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .parallax3 {
+      /* The image used */
+      background-image: url('img/ATLANTIC00003.jpg');
+      /* Full height */
+      height: 100%;
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .content{
+      height:500px;
+      background-color:red;
+      font-size:36px;
+
+    }
+    /*/////////////////////////////////////////////////*/
+    @media (min-width: 768px){
+      .content{
+        height:200px;
+        background-color:#363636;
+        line-height: 50px;
+        text-align: center;
+        font-size:24px;
+        color: #CFCFCF;
+        font-family: CloudLight;
+        padding-top : 20px;
+      }
+      #myModal .modal-dialog{
+        width: 30vw;
+      }
+      #myModal .modal-dialog .modal-body{
+        text-align: left;
+      }
+    }
+    @media (max-width: 768px){
+      .content{
+        height:200px;
+        background-color:red;
+        font-size:24px;
+      }
+      #myModal .modal-dialog{
+        width: 90vw;
+      }
+      #myModal .modal-dialog .modal-body{
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle toggle-left" data-toggle="collapse" data-target="#menu-nav">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="dropdown toggle-right">
+                  <button class="navbar-toggle btn-info" type="button" id="menu1" data-toggle="dropdown">
+                      <span class="glyphicon glyphicon-shopping-cart"></span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#BAG">BAG</a></li>
+                      <li><a href="#ORDER">ORDER</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#SIGN IN">SIGN IN</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-custom" id="menu-nav">
+              <ul class="nav navbar-nav navbar-left">
+                  <li><a href=""><span class="glyphicon glyphicon-home"></span></a></li>
+              </ul>
+              <ul class="nav navbar-nav">
+                  <li><a href="">Fiamma</a></li>
+                  <li><a href="macap.html">Macap</a></li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+              <form class="navbar-form" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control pull-right" placeholder="Search">
+          <span class="input-group-btn">
+            <button type="reset" class="btn btn-default">
+              <span class="glyphicon glyphicon-remove">
+              </span>
+            </button>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search">
+              </span>
+            </button>
+          </span>
+        </div>
+      </form>
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown toggle-right">
+                      <a class="cart-navbar" type="button" id="menu1" data-toggle="dropdown">
+                          <span class="glyphicon glyphicon-shopping-cart"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#BAG">BAG</a></li>
+                          <li><a href="#ORDER">ORDER</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#SIGN IN" data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!--/////////////////////////////////////////////////////////////////-->
+  <div id="myModal" class="modal fade" role="dialog" align="center">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="txt_user">Username</label>
+              <input class="form-control" id="txt_user" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <label for="txt_password">Password</label>
+              <input type="password" class="form-control" id="txt_password" placeholder="Password">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Login</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Forgot Password</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/////////////////////////////////////////////////////////////////-->
+
+  <div class="parallax1"></div>
+  <div class="content">
+    <div id="">
+    fiamma's Atlantic นำเสนอสิ่งที่คุ้มค่าสำหรับธุรกิจกาแฟและอาหารของคุณ <br>
+    Atlantic ได้ออกจำหน่ายทั้งหมด 3 กลุ่ม ทั้งในรุ่นกะทัดรัดและรุ่นที่เหนือกว่า <br>
+    เลือกรูปแบบที่เหมาะสมและปรับแต่งสีสันให้กับธุรกิจของคุณซิ
+  </div>
+
+  <div class="parallax2"></div>
+  <div class="content">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+  </div>
+
+  <div class="parallax3"></div>
+  <div class="content">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+  </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/navbar.js"></script>
+
+</html>
