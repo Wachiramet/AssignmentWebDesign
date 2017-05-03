@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
+  <link href="css/docs.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
   <style>
     body, html {
       height: 100%;
@@ -80,12 +83,6 @@
         font-family: CloudLight;
         padding: 20px;
       }
-      #myModal .modal-dialog{
-        width: 30vw;
-      }
-      #myModal .modal-dialog .modal-body{
-        text-align: left;
-      }
     }
     @media (max-width: 768px){
       .content1{
@@ -113,12 +110,6 @@
         color: #CFCFCF;
         font-family: CloudLight;
         padding: 20px;
-      }
-      #myModal .modal-dialog{
-        width: 90vw;
-      }
-      #myModal .modal-dialog .modal-body{
-        text-align: left;
       }
     }
   </style>
@@ -195,20 +186,15 @@
           <h4 class="modal-title">Login</h4>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="form-group">
-              <label for="txt_user">Username</label>
-              <input class="form-control" id="txt_user" placeholder="Username">
-            </div>
-            <div class="form-group">
-              <label for="txt_password">Password</label>
-              <input type="password" class="form-control" id="txt_password" placeholder="Password">
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Login</button>
-          <button type="button" class="btn btn-default" data-dismiss="modal">Forgot Password</button>
+          <a class="btn btn-block btn-social btn-facebook">
+            <span class="fa fa-facebook"></span> Sign in with Facebook
+          </a>
+          <a class="btn btn-block btn-social btn-google">
+            <span class="fa fa-google"></span> Sign in with Google+
+          </a>
+          <a class="btn btn-block btn-social btn-twitter">
+            <span class="fa fa-twitter"></span> Sign in with Twitter
+          </a>
         </div>
       </div>
     </div>
@@ -238,5 +224,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/navbar.js"></script>
-
+<script src="js/docs.js"></script>
 </html>
