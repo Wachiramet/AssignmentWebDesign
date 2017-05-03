@@ -1,0 +1,21 @@
+.content-product{
+  margin-top: 80px;
+  margin-right: 20px;
+}
+.content-detail{
+  margin-top: 60px;
+}
+@media (min-width: 768px) {
+  .img-product img{
+    position: fixed;
+    width: 500px;
+    margin-left: 50px;
+  }
+}
+@media (max-width: 767px){
+  .img-product img{
+    position: fixed;
+    width: 200px;
+    margin-left: 20px;
+  }
+}
