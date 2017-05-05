@@ -34,7 +34,7 @@
 .navbar-sub ul li a {
     display: block;
     float: left;
-    color: #888;
+    color: #fff;
     min-width: 100px;
     background-color: #0070c9;
     height: 72px;
@@ -42,7 +42,7 @@
     text-decoration: none;
 }
 .navbar-sub ul li a:hover {
-    color: #0070c9;
+    color: #fff;
     background-color: #004099;
 }
 .navbar-sub ul li:first-child a {
