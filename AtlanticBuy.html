@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/navbar.css" rel="stylesheet">
+  <link href="css/bootstrap-social.css" rel="stylesheet">
+  <link href="css/docs.css" rel="stylesheet">
+  <link href="css/font-awesome.css" rel="stylesheet">
+  <style>
+    .pricing {
+      position: relative;
+      margin-bottom: 15px;
+      border: 3px solid #eee;
+    }
+    .pricing-active {
+      border: 3px solid #36d7ac;
+      margin-top: -10px;
+      box-shadow: 7px 7px rgba(54, 215, 172, 0.2);
+    }
+    .pricing:hover {
+      border: 3px solid #36d7ac;
+    }
+    .pricing:hover h4 {
+      color: #36d7ac;
+    }
+    .pricing-head {
+      text-align: center;
+    }
+    .pricing-head h3,.pricing-head h4 {
+      margin: 0;
+      line-height: normal;
+    }
+    .pricing-head .ProductImg{
+      display: block;
+      width:100%;
+      margin-top: 0px;
+    }
+    .pricing-head h4 span {
+      display: block;
+      margin-top: 5px;
+      font-size: 14px;
+      font-style: italic;
+    }
+    .pricing-head h3 {
+      font-weight: 300;
+      color: #fafafa;
+      font-size: 27px;
+      background: #000000;
+      padding:5px;
+    }
+    .pricing-head h4 {
+      color: #bac39f;
+      padding: 5px 0;
+      font-size: 54px;
+      font-weight: 300;
+      background: #fbfef2;
+      border-bottom: solid 1px #f5f9e7;
+    }
+    .pricing-head-active h4 {
+      color: #36d7ac;
+    }
+    .pricing-head h4 i {
+      top: -8px;
+      font-size: 28px;
+      font-style: normal;
+      position: relative;
+    }
+    .pricing-head h4 span {
+      top: -10px;
+      font-size: 14px;
+      font-style: normal;
+      position: relative;
+    }
+    /*Pricing Content*/
+    .pricing-content li {
+      color: #888;
+      font-size: 12px;
+      padding: 7px 15px;
+      border-bottom: solid 1px #f5f9e7;
+    }
+    /*Pricing Footer*/
+    .pricing-footer {
+      color: #777;
+      font-size: 11px;
+      line-height: 17px;
+      text-align: center;
+      padding: 0 20px 19px;
+    }
+    /*Priceing Active*/
+    .price-active,.pricing:hover {
+      z-index: 0;
+    }
+    .price-active h4 {
+      color: #36d7ac;
+    }
+    .no-space-pricing .pricing:hover {
+      transition: box-shadow 0.2s ease-in-out;
+    }
+    .no-space-pricing .price-active .pricing-head h4,
+    .no-space-pricing .pricing:hover .pricing-head h4 {
+      color: #36d7ac;
+      padding: 15px 0;
+      font-size: 80px;
+      transition: color 0.5s ease-in-out;
+    }
+    .yellow-crusta.btn {
+      color: #FFFFFF;
+      background-color: #f3c200;
+    }
+    .yellow-crusta.btn:hover,
+    .yellow-crusta.btn:focus,
+    .yellow-crusta.btn:active,
+    .yellow-crusta.btn.active {
+        color: #FFFFFF;
+        background-color: #cfa500;
+    }
+
+    /*////////////////////////////////////////////////*/
+    @media (min-width: 768px){
+      .header{
+        padding-top:150px;
+      }
+      .header p{
+        font-size: 59px;
+      }
+      .content {
+          padding: 100px 0;
+      }
+      .pricing-head .ProductImg img{
+        width:100%;
+        height:200px;
+      }
+    }
+    @media (max-width: 768px){
+      .header{
+        padding-top:50px;
+      }
+      .header p{
+        font-size: 24px;
+      }
+      .content {
+          padding: 0;
+      }
+      .pricing-head .ProductImg img{
+        width:100%;
+        height:auto;
+      }
+    }
+    @media (max-width: 1000px){
+      .header{
+        padding-top:10px;
+      }
+      .header p{
+        font-size: 24px;
+      }
+      .content {
+          padding: 0;
+      }
+      .pricing-head .ProductImg img{
+        width:100%;
+        height:auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle toggle-left" data-toggle="collapse" data-target="#menu-nav">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="dropdown toggle-right">
+                  <button class="navbar-toggle btn-info" type="button" id="menu1" data-toggle="dropdown">
+                      <span class="glyphicon glyphicon-shopping-cart"></span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#BAG">BAG</a></li>
+                      <li><a href="#ORDER">ORDER</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#SIGN IN">SIGN IN</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-custom" id="menu-nav">
+              <ul class="nav navbar-nav navbar-left">
+                  <li><a href=""><span class="glyphicon glyphicon-home"></span></a></li>
+              </ul>
+              <ul class="nav navbar-nav">
+                  <li><a href="">Fiamma</a></li>
+                  <li><a href="macap.html">Macap</a></li>
+                  <li><a href="">Contact</a></li>
+              </ul>
+              <form class="navbar-form" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control pull-right" placeholder="Search">
+          <span class="input-group-btn">
+            <button type="reset" class="btn btn-default">
+              <span class="glyphicon glyphicon-remove">
+              </span>
+            </button>
+            <button type="submit" class="btn btn-default">
+              <span class="glyphicon glyphicon-search">
+              </span>
+            </button>
+          </span>
+        </div>
+      </form>
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown toggle-right">
+                      <a class="cart-navbar" type="button" id="menu1" data-toggle="dropdown">
+                          <span class="glyphicon glyphicon-shopping-cart"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#BAG">BAG</a></li>
+                          <li><a href="#ORDER">ORDER</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#SIGN IN" data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!--/////////////////////////////////////////////////////////////////-->
+
+  <!--Login-->
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog" align="center">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <a class="btn btn-block btn-social btn-facebook">
+            <span class="fa fa-facebook"></span> Sign in with Facebook
+          </a>
+          <a class="btn btn-block btn-social btn-google">
+            <span class="fa fa-google"></span> Sign in with Google+
+          </a>
+          <a class="btn btn-block btn-social btn-twitter">
+            <span class="fa fa-twitter"></span> Sign in with Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--/////////////////////////////////////////////////////////////////-->
+
+  <div class="header">
+    <center><p>เลือก Fiamma เครื่องใหม่ของคุณ</p></center>
+  </div>
+  <div class="container content">
+  	<div class="row">
+  		<div class="col-md-3">
+  			<div class="pricing hover-effect">
+  				<div class="pricing-head">
+  					<h3>Atlantic I</h3>
+            <div class="ProductImg">
+              <img src="img/ATLANTIC I CV PCI.jpg">
+            </div>
+  					<h4>
+              <i>$</i>21
+  					  <span>Per Week </span>
+  					</h4>
+  				</div>
+  				<ul class="pricing-content list-unstyled">
+  					<li>
+  						Dimensions (WDH) : 475x563x530 mm
+  					</li>
+  					<li>
+  						Power : 1.95 kW
+  					</li>
+  					<li>
+  						Power Supply : ~220-230 V/400V-2N
+  					</li>
+  					<li>
+  						Boiler Capacity : 5 l
+  					</li>
+  					<li>
+  						Water Taps : 1
+  					</li>
+            <li>
+  						Steam Taps : 1
+  					</li>
+            <li>
+  						Weight : 45 kg
+  					</li>
+            <li>
+  						Automatic Version : 2.0.016.1006 Atlantic I CV
+  					</li>
+            <li>
+  						Semi-Automatic Version : 2.0.016.1001 Atlantic I
+  					</li>
+            <li>
+  						Also available : Raised group
+  					</li>
+  				</ul>
+  				<div class="pricing-footer">
+  					<a href="javascript:;" class="btn yellow-crusta">Select</a>
+  				</div>
+  			</div>
+  		</div>
+      <div class="col-md-3">
+  			<div class="pricing hover-effect">
+  				<div class="pricing-head">
+  					<h3>	Atlantic II Compact</h3>
+            <div class="ProductImg">
+              <img src="img/ATLANTIC II COMPACT .jpg" width="100%" >
+            </div>
+  					<h4><i>$</i>25
+  					       <span>Per Week </span>
+  					</h4>
+  				</div>
+  				<ul class="pricing-content list-unstyled">
+  					<li>
+  						Dimensions (WDH) : 475x563x530 mm
+  					</li>
+  					<li>
+  						Power : 1.95 kW
+  					</li>
+  					<li>
+  						Power Supply : ~220-230 V/400V-2N
+  					</li>
+  					<li>
+  						Boiler Capacity : 6.5 l
+  					</li>
+  					<li>
+  						Water Taps : 1
+  					</li>
+            <li>
+  						Steam Taps : 1
+  					</li>
+            <li>
+  						Weight : 52.5 kg
+  					</li>
+            <li>
+  						Automatic Version : 2.0.017.3006 Atlantic II Compact CV
+  					</li>
+            <li>
+  						Semi-Automatic Version : 2.0.017.3001 Atlantic II Compact
+  					</li>
+            <li>
+  						Also available : Raised group
+  					</li>
+  				</ul>
+  				<div class="pricing-footer">
+  					<a href="javascript:;" class="btn yellow-crusta">Select</a>
+  				</div>
+  			</div>
+  		</div>
+      <div class="col-md-3">
+  			<div class="pricing hover-effect">
+  				<div class="pricing-head">
+  					<h3>Atlantic II</h3>
+            <div class="ProductImg">
+              <img src="img/ATLANTIC II CV PCI.jpg" width="100%" >
+            </div>
+  					<h4><i>$</i>35
+  					       <span>Per Week </span>
+  					</h4>
+  				</div>
+  				<ul class="pricing-content list-unstyled">
+  					<li>
+  						Dimensions (WDH) : 665x563x530 mm
+  					</li>
+  					<li>
+  						Power : 3.8 kW
+  					</li>
+  					<li>
+  						Power Supply : ~220-230 V/400V-2N
+  					</li>
+  					<li>
+  						Boiler Capacity : 9 l
+  					</li>
+  					<li>
+  						Water Taps : 1
+  					</li>
+            <li>
+  						Steam Taps : 2
+  					</li>
+            <li>
+  						Weight : 59 kg
+  					</li>
+            <li>
+  						Automatic Version : 2.0.017.1006 Atlantic II CV
+  					</li>
+            <li>
+  						Semi-Automatic Version : 2.0.017.1001 Atlantic II
+  					</li>
+            <li>
+  						Also available : Raised group
+  					</li>
+  				</ul>
+  				<div class="pricing-footer">
+  					<a href="javascript:;" class="btn yellow-crusta">Select</a>
+  				</div>
+  			</div>
+  		</div>
+      <div class="col-md-3">
+  			<div class="pricing hover-effect">
+  				<div class="pricing-head">
+  					<h3>Atlantic II Tall Cups</h3>
+            <div class="ProductImg">
+              <img src="img/ATLANTIC II CV TALL CUPS5.jpg" width="100%" >
+            </div>
+  					<h4><i>$</i>39
+  					       <span>Per Week </span>
+  					</h4>
+  				</div>
+  				<ul class="pricing-content list-unstyled">
+  					<li>
+  						Dimensions (WDH) : 665x563x530 mm
+  					</li>
+  					<li>
+  						Power : 3.8 kW
+  					</li>
+  					<li>
+  						Power Supply : ~220-230 V/400V-2N
+  					</li>
+  					<li>
+  						Boiler Capacity : 9 l
+  					</li>
+  					<li>
+  						Water Taps : 1
+  					</li>
+            <li>
+  						Steam Taps : 2
+  					</li>
+            <li>
+  						Weight : 58 kg
+  					</li>
+            <li>
+  						Automatic Version : 2.0.017.2016 Atlantic II TC CV
+  					</li>
+            <li>
+  						Semi-Automatic Version : 2.0.017.2011 Atlantic II TC
+  					</li>
+            <li>
+  						Also available : -
+  					</li>
+  				</ul>
+  				<div class="pricing-footer">
+  					<a href="javascript:;" class="btn yellow-crusta">Select</a>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+    <div class="row">
+      <div class="col-md-3">
+  			<div class="pricing hover-effect">
+  				<div class="pricing-head">
+  					<h3>Atlantic III</h3>
+            <div class="ProductImg">
+              <img src="img/ATLANTIC III CV TALL CUPS_FRONT.jpg" width="100%" >
+            </div>
+  					<h4><i>$</i>59
+  					       <span>Per Week </span>
+  					</h4>
+  				</div>
+  				<ul class="pricing-content list-unstyled">
+  					<li>
+  						Dimensions (WDH) : 875x563x530 mm
+  					</li>
+  					<li>
+  						Power : 5.3 kW
+  					</li>
+  					<li>
+  						Power Supply : ~220-230 V/400V-2N
+  					</li>
+  					<li>
+  						Boiler Capacity : 18 l
+  					</li>
+  					<li>
+  						Water Taps : 1
+  					</li>
+            <li>
+  						Steam Taps : 2
+  					</li>
+            <li>
+  						Weight : 80 kg
+  					</li>
+            <li>
+  						Automatic Version : 2.0.018.1006 Atlantic III CV
+  					</li>
+            <li>
+  						Semi-Automatic Version : 2.0.018.1001 Atlantic III
+  					</li>
+            <li>
+  						Also available : Raised groups
+  					</li>
+  				</ul>
+  				<div class="pricing-footer">
+  					<a href="javascript:;" class="btn yellow-crusta">Select</a>
+  				</div>
+  			</div>
+  		</div>
+    </div>
+  </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/docs.js"></script>
+</html>
