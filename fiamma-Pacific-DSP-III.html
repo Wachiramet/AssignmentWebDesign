@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/content-fiamma.css" rel="stylesheet">
+    <link href="css/product.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+  </head>
+  <body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle toggle-left" data-toggle="collapse" data-target="#menu-nav">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <div class="dropdown toggle-right">
+                  <button class="navbar-toggle btn-info" type="button" id="menu1" data-toggle="dropdown">
+                      <span class="glyphicon glyphicon-shopping-cart"></span>
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#BAG">BAG</a></li>
+                      <li><a href="#ORDER">ORDER</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#SIGN IN" data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="collapse navbar-collapse navbar-custom" id="menu-nav">
+              <ul class="nav navbar-nav navbar-left">
+                  <li><a href="Fiamma.html"><span class="glyphicon glyphicon-home"></span></a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-center">
+                  <li><a href="AtlanticContent.html">Atlantic</a></li>
+                  <li><a href="PacificContent.html">Pacific</a></li>
+                  <li><a href="PrestigeContent.html">Prestige</a></li>
+
+                  <li><a href="">Contact</a></li>
+              </ul>
+              <form class="navbar-form" role="search">
+                <div class="input-group">
+                  <input type="text" class="form-control pull-right" placeholder="Search">
+                  <span class="input-group-btn">
+                    <button type="reset" class="btn btn-default">
+                      <span class="glyphicon glyphicon-remove">
+                      </span>
+                    </button>
+                    <button type="submit" class="btn btn-default">
+                      <span class="glyphicon glyphicon-search">
+                      </span>
+                    </button>
+                  </span>
+                </div>
+              </form>
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown toggle-right">
+                      <a class="cart-navbar" type="button" id="menu1" data-toggle="dropdown">
+                          <span class="glyphicon glyphicon-shopping-cart"></span>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-right">
+                          <li><a href="#BAG">BAG</a></li>
+                          <li><a href="#ORDER">ORDER</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#SIGN IN" data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+  <!--/////////////////////////////////////////////////////////////////-->
+
+  <!--Login-->
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog" align="center">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Login</h4>
+        </div>
+        <div class="modal-body">
+          <a class="btn btn-block btn-social btn-facebook">
+            <span class="fa fa-facebook"></span> Sign in with Facebook
+          </a>
+          <a class="btn btn-block btn-social btn-google">
+            <span class="fa fa-google"></span> Sign in with Google+
+          </a>
+          <a class="btn btn-block btn-social btn-twitter">
+            <span class="fa fa-twitter"></span> Sign in with Twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--/////////////////////////////////////////////////////////////////-->
+    <div class="container">
+      <div class="row content-product ">
+        <div class="col-xs-6 col-md-6 img-product">
+          <img src="img/PACIFIC III CV_FRONT.jpg" alt="" >
+        </div>
+        <div class="col-xs-6 col-md-6">
+          <div class="panel panel-default content-detail">
+            <div class="panel-heading header-detail" align="center">
+              <p>Pacific DSP III</p>
+            </div>
+            <div class="panel-body body-detail">
+              <ul class="pricing-content list-unstyled">
+      					<li>
+      						Dimensions (WDH) : 960x660x610 mm
+      					</li>
+      					<li>
+      						Power : 5.2 kW
+      					</li>
+      					<li>
+      						Power Supply : ~220-230 V/ 400 V - 2N
+      					</li>
+      					<li>
+      						Boiler Capacity : 18 l
+      					</li>
+      					<li>
+      						Water Taps : 1
+      					</li>
+                <li>
+      						Steam Taps : 2
+      					</li>
+                <li>
+      						Weight : 77 kg
+      					</li>
+                <li>
+      						Automatic water refill. Built-in water pump
+      					</li>
+                <li>
+      						Automatic: Programmable dosage of servings and hot water
+      					</li>
+                <li>
+      						Also available : Raised group
+      					</li>
+      				</ul>
+            </div>
+          </div>
+          <button type="button" class="btn btn-default btn-lg body-detail" data-toggle="modal" data-target="#Popup">ซื้อเลย <span class="glyphicon glyphicon-shopping-cart"></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade body-detail" id="Popup" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content popup-noti">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">ยืนยันการซื้อ</h4>
+          </div>
+          <div class="modal-body">
+            <p>ยืนยันการซื้อสำเร็จ !</p>
+          </div>
+          <div class="modal-footer ">
+            <button type="button" class="btn btn-default" ><a href="index.html">Back to index</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!--  Script Search -->
+  <script src="js/navbar.js"></script>
+</html>
