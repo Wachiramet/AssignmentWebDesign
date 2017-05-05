@@ -7,24 +7,32 @@
 }
 @media (min-width: 768px) {
   .img-product img{
-    position: fixed;
-    width: 500px;
-    margin-left: 50px;
+    float:right;
+    width: 400px;
     margin-top: 30px;
   }
   #Popup{
-  margin-top: 200px;
-  margin-left: 400px;
+    margin-top: 200px;
+    margin-left: 400px;
   }
   .popup-noti{
     width: 250px;
   }
+  .panel{
+    width:500px;
+  }
+  .container{
+    width:100%;
+  }
+  p{
+    padding-top: 10px;
+    font-size: 36px;
+  }
 }
 @media (max-width: 767px){
   .img-product img{
-    position: fixed;
-    width: 190px;
-    margin-left: 10px;
+    float:right;
+    width: 100%;
     margin-top: 50px;
   }
   #Popup{
@@ -33,6 +41,19 @@
   }
   .popup-noti{
     width: 250px;
+  }
+  .panel{
+    width:100%;
+  }
+  .container{
+    width:100vw;
+  }
+  p{
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  li{
+    font-size: 14px;
   }
 }
 .header-detail{
