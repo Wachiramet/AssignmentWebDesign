@@ -67,6 +67,7 @@
 /* Sign in ... */
 #myModal .modal-dialog{
     margin: 30px auto;
+    max-width: 286px;
 }
 #myModal .modal-dialog .modal-body{
     text-align: left;
@@ -107,12 +108,6 @@
         background-color: #222;
     }
     /* Search ... */
-    /* Sign in ... */
-    #myModal .modal-dialog{
-        width: 90vw;
-        min-width: 286px;
-    }
-    /* Sign in ... */
     /* nav sub */
     .navbar-sub ul {
         width: 768px;
@@ -185,12 +180,6 @@
         background-color: #222;
     }
     /* Search ... */
-    /* Sign in ... */
-    #myModal .modal-dialog{
-        width: 30vw;
-        min-width: 690px;
-    }
-    /* Sign in ... */
 }
 /* Font ... */
 @font-face {
