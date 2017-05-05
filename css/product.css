@@ -13,10 +13,10 @@
   }
   #Popup{
     margin-top: 10%;
-    margin-left: 100px;
   }
   .popup-noti{
     width: 500px;
+    margin: auto;
   }
   .panel{
     width:500px;
@@ -37,10 +37,10 @@
   }
   #Popup{
   margin-top: 60%;
-  margin-left: 80px;
   }
   .popup-noti{
     width: 250px;
+    margin: auto;
   }
   .panel{
     width:100%;
