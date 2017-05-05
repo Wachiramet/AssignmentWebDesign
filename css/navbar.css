@@ -26,7 +26,6 @@
     display: block;
     float: left;
     color: #888;
-    width: 33.33%;
     min-width: 100px;
     padding: 15px;
     text-decoration: none;
@@ -116,7 +115,7 @@
     /* Sign in ... */
     /* nav sub */
     .navbar-sub ul {
-        width: 442px;
+        width: 768px;
         max-width: 100%;
     }
     /* nav sub */
@@ -137,7 +136,7 @@
     .navbar-nav li {
         border-bottom: 0px;
         margin: 0;
-        width: 33.33%;
+        width: 20%;
     }
     .navbar-collapse {
         padding-top: 0px !important;
